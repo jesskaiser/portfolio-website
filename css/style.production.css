@@ -156,7 +156,8 @@ nav>ul>li {
 }
 
 /*----------*/
-.navigation-list {
+.navigation-list,
+ul {
     list-style-type: none;
 }
 
@@ -537,6 +538,8 @@ span {
     max-width: -webkit-fit-content;
     max-width: -moz-fit-content;
     max-width: fit-content;
+    /*max-width: 33vw;*/
+    text-align: center;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
