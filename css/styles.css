@@ -140,7 +140,8 @@ nav>ul>li {
 }
 
 /*----------*/
-.navigation-list {
+.navigation-list,
+ul {
     list-style-type: none;
 }
 
@@ -377,6 +378,8 @@ span {
 
 #about-text {
     max-width: fit-content;
+    /*max-width: 33vw;*/
+    text-align: center;
     height: fit-content;
     margin: 0 auto;
 }
