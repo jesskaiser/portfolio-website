@@ -80,7 +80,8 @@
         "function-name-case": "lower",
         "function-no-unknown": [
             true,
-            {"ignoreFunctions": [
+            {
+                "ignoreFunctions": [
                     "lighten",
                     "darken"
                 ]
