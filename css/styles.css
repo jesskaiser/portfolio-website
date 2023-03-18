@@ -11,10 +11,28 @@ body background :#f8f8f8
   --box-shadow-f: rgba(0 0 0 / 20%);
   --box-shadow: 0 4px 8px 0 var(--box-shadow-f), 0 6px 20px 0 rgba(0 0 0 / 19%);
   --body-bg-f: rgba(247 250 252 / 100%);
-  --body-background: radial-gradient(circle, rgba(247 250 252 / 100%) 0%, rgba(247 250 252 / 100%) 92%, rgba(213 232 248 / 100%) 100%);
+  --body-background:
+    radial-gradient(
+      circle,
+      rgba(247 250 252 / 100%) 0%,
+      rgba(247 250 252 / 100%) 92%,
+      rgba(213 232 248 / 100%) 100%
+    );
   --header-footer-background-f: rgba(255 255 255 / 100%);
-  --header-background: linear-gradient(0deg, var(--header-footer-background-f) 0%, rgba(247 250 252 / 100%) 56%, rgba(213 232 248 / 100%) 100%);
-  --footer-background: linear-gradient(180deg, var(--header-footer-background-f) 0%, rgba(247 250 252 / 100%) 56%, rgba(213 232 248 / 100%) 100%);
+  --header-background:
+    linear-gradient(
+      0deg,
+      var(--header-footer-background-f) 0%,
+      rgba(247 250 252 / 100%) 56%,
+      rgba(213 232 248 / 100%) 100%
+    );
+  --footer-background:
+    linear-gradient(
+      180deg,
+      var(--header-footer-background-f) 0%,
+      rgba(247 250 252 / 100%) 56%,
+      rgba(213 232 248 / 100%) 100%
+    );
   --button-background: #385066;
   --button-background-lighter: lighten(var(--button-background), 20%);
   --link-color: #054c73;
@@ -22,11 +40,22 @@ body background :#f8f8f8
   --link-active: darken(var(--link-color), 20%);
   --link-visited: #395a6d;
   --text-shadow-body-f: rgb(212 204 204);
-  --text-shadow-body: 1px 1px 2px var(--text-shadow-body-f), 0 0 1px rgb(148 148 185), 0 0 2px rgb(154 154 197);
+  --text-shadow-body:
+    1px 1px 2px var(--text-shadow-body-f),
+    0 0 1px rgb(148 148 185),
+    0 0 2px rgb(154 154 197);
   --button-text-shadow-f: rgb(168 172 171);
-  --button-text-shadow: 0 0 1px var(--button-text-shadow-f), 0 0 1px rgb(148 148 185), 0 0 1px rgb(157 157 160);
+  --button-text-shadow:
+    0 0 1px var(--button-text-shadow-f),
+    0 0 1px rgb(148 148 185),
+    0 0 1px rgb(157 157 160);
   --project-table-background-f: rgb(247 250 252);
-  --project-table-background: radial-gradient(circle, var(--project-table-background-f) 0%, rgba(211 211 211 / 78.6%) 100%);
+  --project-table-background:
+    radial-gradient(
+      circle,
+      var(--project-table-background-f) 0%,
+      rgba(211 211 211 / 78.6%) 100%
+    );
   --page-header-bg-before: #5c82e9;
   --nav-text-color: #000006;
   --page-header-visited: #0d0d36;
@@ -129,7 +158,7 @@ nav > ul > li {
   height: 2px;
   left: 0;
   bottom: 0;
-  content: '';
+  content: "";
   background: var(--page-header-bg-before);
   opacity: 0.3;
   transition: all 0.3s;
@@ -260,15 +289,30 @@ input {
   display: inline-block;
 }
 
+.input-wrapper {
+  margin: 10px;
+}
+
+/* error message */
+.error-message {
+  margin: 0;
+  text-align: right;
+  color: red;
+  font-size: 10px;
+  margin-bottom: -16px;
+  margin-right: 35px;
+}
+
 .contact-form__submit {
   /* margin-left: 210px; */
-  text-align: right;
+  text-align: center;
   margin-right: 20px;
 }
 
 .contact-form__submit > p {
   font-style: italic;
   font-size: 10px;
+  text-align: end;
 }
 
 .button,
@@ -334,7 +378,7 @@ button:active,
 span {
   background-color: black;
   color: white;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: 500;
 }
 
